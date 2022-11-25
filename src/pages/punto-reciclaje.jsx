@@ -24,6 +24,24 @@ const PuntoReciclajePage = () => {
       horario: "Lunes a viernes 09:00 a 17:00",
       material: "Plástico y Cartones"
     },
+    {
+      _id:4,
+      ubicacion: "Av.4  no cacho una, esquina los buitres",
+      horario: "Lunes a viernes 09:00 a 17:00",
+      material: "Plástico y Cartones"
+    },
+    {
+      _id:5,
+      ubicacion: "Av.5  no cacho una, esquina los buitres",
+      horario: "Lunes a viernes 09:00 a 17:00",
+      material: "Plástico y Cartones"
+    },
+    {
+      _id:6,
+      ubicacion: "Av.6  no cacho una, esquina los buitres",
+      horario: "Lunes a viernes 09:00 a 17:00",
+      material: "Plástico y Cartones"
+    },
 ]
 
   return (
