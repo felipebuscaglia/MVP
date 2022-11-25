@@ -18,28 +18,28 @@ export const NavBar = () => {
       
       <Grid item xs={9}>
         <Button 
-          variant="contained" 
+          variant="text"
           startIcon={<HomeIcon />}
           component={Link} to="/">
           Volver a inicio
         </Button>
 
         <Button 
-          variant="contained" 
+          variant="text" 
           startIcon={<LocationOnIcon />}
           component={Link} to="/punto-reciclaje">
           Puntos de reciclaje
         </Button>
 
         <Button 
-          variant="contained" 
+          variant="text" 
           startIcon={<AccessibilityNewIcon />}
           component={Link} to="/material-reciclar">
           ¿Qué reciclar?
         </Button>
 
         <Button 
-          variant="contained" 
+          variant="text" 
           startIcon={<DeleteIcon />}
           component={Link} to="/servicio-retiro">
           Servicio de retiro

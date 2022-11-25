@@ -43,7 +43,7 @@ function Item(props)
             <img src={Reciclaje1} height='100%'/> */}
             <Card>
             <CardHeader
-                title={<Typography variant='h5' color='blue'> {props.item.name} </Typography>}
+                title={<Typography variant='h5' color={'green'} sx={{fontWeight: 'bold'}}> {props.item.name} </Typography>}
             />
             <CardMedia
                 component="img"
@@ -52,7 +52,7 @@ function Item(props)
                 alt={'img reciclaje'}
             />
             <CardContent>
-                <Typography variant='body1' color='green'> {props.item.description} </Typography>
+                <Typography variant='body1'> {props.item.description} </Typography>
             </CardContent>
             </Card>
         </Grid>
