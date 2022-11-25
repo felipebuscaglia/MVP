@@ -10,65 +10,51 @@ import logo from '../assets/logo.png';
 
 export const NavBar = () => {
   return (
-    <Grid item xs={12} sx={{display:'flex', justifyContent:'center', alignContent:'center', backgroundColor:'green', height:'100px', flexWrap:'wrap'}}>
-      
-      <Grid item xs={3} sx={{display:'flex', justifyContent:'center'}}>
+    <Grid item xs={12} sx={{display:'flex', justifyContent:'center', alignContent:'center', backgroundColor:'green', height:'100px', flexWrap:'wrap'}}>     
+      <Grid item xs={3} sx={{display:'flex', justifyContent:'left', paddingLeft:'20px'}}>
         <img src={logo} height={50}/>
       </Grid>
       
-      <Grid item xs={9}>
+      <Grid item xs={9} sx={{display:'flex', justifyContent:'right', paddingRight:'20px'}}>
         <Button 
-          variant="text"
+          variant="contained"
           startIcon={<HomeIcon />}
-          component={Link} to="/">
+          component={Link} to="/"
+          sx={{margin:'10px'}}
+          color='success'>
           Volver a inicio
+          
         </Button>
 
         <Button 
-          variant="text" 
+          variant="contained" 
           startIcon={<LocationOnIcon />}
-          component={Link} to="/punto-reciclaje">
+          component={Link} to="/punto-reciclaje"
+          sx={{margin:'10px'}}
+          color='success'>
           Puntos de reciclaje
         </Button>
 
         <Button 
-          variant="text" 
+          variant="contained" 
           startIcon={<AccessibilityNewIcon />}
-          component={Link} to="/material-reciclar">
+          component={Link} to="/material-reciclar"
+          sx={{margin:'10px'}}
+          color='success'>
           ¿Qué reciclar?
         </Button>
 
         <Button 
-          variant="text" 
+          variant="contained" 
           startIcon={<DeleteIcon />}
-          component={Link} to="/servicio-retiro">
+          component={Link} to="/servicio-retiro"
+          sx={{margin:'10px'}}
+          color='success'>
           Servicio de retiro
         </Button>
 
       </Grid>
     </Grid>
-
-    // <nav className='nav-bar'>
-    //   <NavLink
-    //     className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
-    //     to='/'
-    //   >
-    //     Puntos de reciclaje
-    //   </NavLink>
-    //   <NavLink
-    //     className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
-    //     to='/internal'
-    //   >
-    //     Que reciclar
-    //   </NavLink>
-
-    //   <NavLink
-    //     className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
-    //     to='/internal'
-    //   >
-    //     Servicio de retiro
-    //   </NavLink>
-    // </nav>
   )
 }
 
