@@ -1,11 +1,15 @@
 import React from 'react';
-import { Typography } from '@mui/material';
+import { Typography, Grid, Divider } from '@mui/material';
 import { HomeLayout } from '../components/homeLayout'; 
+import { ListaMateriales } from '../components/materiales-reciclar/listaMateriales';
 
 export const MaterialesReciclarPage = () => {
   return (
     <HomeLayout>
-      <Typography>Materiales reciclar</Typography>
+      <Grid xs={12} sx={{display:'flex', justifyContent:'center', padding:'20px'}}>
+        <Typography variant='h3'> Lista de Materiales reciclables </Typography>
+      </Grid>
+      <ListaMateriales/>
     </HomeLayout>
   )
 }
